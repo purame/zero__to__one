@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero to One</title>
+    <meta name="description" content="">
+    <!-- css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/function.js"></script>
+</head>
+
+<body>
+    <!-- header  -->
+    <header id="header" class="inner">
+        <h1 class="header__logo"><a href="#"><img src="img/logo.png" alt=""></a></h1>
+        <nav>
+            <ul class="header__list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main  -->
+    <div id="main">
+        <div id="mainVisual">
+            <picture>
+                <source media="(max-width: 767px)" srcset="img/sp__main__img.jpg">
+                <img src="img/main__img.jpg" alt="">
+            </picture>
+        </div>
+        <section id="profile" class="inner">
+            <h2 class="section-title">PROFILE</h2>
+            <div class="profile__content">
+                <div class="profile__lt">
+                    <img src="img/portfolio.jpg" alt="">
+                </div>
+                <div class="profile__rt">
+                    <p class="profile__name">諏訪部輝也<br>代表兼パーソナルトレーナー</p><br><br>
+                    <p>静岡県生まれの大学生。<br>大学ではスペイン語とポルトガル語を専攻。<br>幼少よりサッカーを始め、選抜チームの選出経験もある。
+                        <br>また、大学入学後は社会人チームでプレー。<br>ウエイトトレーニングとは高校生の時に出会い、静岡県のボディビルチャンピオンに弟子入り。
+                        <br>現在は元ボディビルダーの守沢創一氏のもと修行中。<br>趣味は読書。1日2時間は読書に充てている。
+                        <br>「人生を賢く生きる」をモットーに日々の努力を楽しんでいる。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- about  -->
+        <section id="about" class="inner">
+            <h2 class="section-title">ABOUT</h2>
+            <p>
+                「ワークアウト（筋トレ）で人生は変わる！」その思いから大学3年生ながらに企業を決意。”Zero to One”を設立。<br>
+                それぞれスキルを持った野心あふれる大学生が、納得のいくサービスを展開。
+            </p>
+            <table>
+                <tr>
+                    <th>商号</th>
+                    <td>Zero to One</td>
+                </tr>
+                <tr>
+                    <th>設立</th>
+                    <td>2021年 2月</td>
+                </tr>
+                <tr>
+                    <th>代表者</th>
+                    <td>諏訪部 輝也</td>
+                </tr>
+                <tr>
+                    <th>事業内容</th>
+                    <td>パーソナルトレーニング・WEB関連事業・画像編集</td>
+                </tr>
+            </table>
+        </section>
+        <!-- service  -->
+        <section id="service" class="inner">
+            <h2 class="section-title">SERVICE</h2>
+            <div class="card">
+                <div class="card__item">
+                    <div class="card-title">単発1回（６０分）</div>
+                    <ul class="card-list">
+                        <li>価格：3,500円</li>
+                        <li>内容：トレーニング指導</li>
+                    </ul>
+                </div>
+                <div class="card__item">
+                    <div class="card-title">LINEで質問し放題</div>
+                    <ul class="card-list">
+                        <li><span>価格</span>：5,000円</li>
+                        <li><span>期間</span>：1ヶ月</li>
+                        <li><span>内容</span>：食生活など</li>
+                    </ul>
+                </div>
+                <div class="card__item">
+                    <span class="sale"></span>
+                    <div class="card-title">ワークアウト指導<br>（1か月）</div>
+                    <ul class="card-list">
+                        <li><span>価格</span>：14,000円</li>
+                        <li><span>回数</span>：4回</li>
+                    </ul>
+                </div>
+                <div class="card__item">
+                    <span class="sale"></span>
+                    <div class="card-title">ワークアウト指導<br>（3か月）</div>
+                    <ul class="card-list">
+                        <li><span>価格</span>：42,000円</li>
+                        <li><span>回数</span>：12回</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- contact  -->
+        <section id="contact" class="inner">
+            <h2 class="section-title">CONTACT</h2>
+
+            <form class="form" action="mailbox/post.cgi">
+
+                <div class="form__item">
+                    <input type="text" placeholder="お名前">
+                    <i class="fas fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                </div>
+                <div class="form__item">
+                    <input type="text" placeholder="メールアドレス">
+                    <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+                </div>
+                <textarea placeholder="お問い合わせ内容"></textarea>
+
+                <input type="submit">
+
+            </form>
+        </section>
+
+        <section id="social" class="inner">
+            <a href="https://www.instagram.com/tfit_urw2006/" target="blank"><i class="fab fa-instagram"></i></a>
+            <i class="fab fa-line"></i>
+        </section>
+
+<!-- footer -->
+        <footer id="footer">
+            <p id="copyright"><small>Copyright &copy; 2021 Zero to One All rights reserved.</small></p>
+        </footer>
+<!-- pagetop  -->
+        <div class="pagetop">
+            <a href="#">
+                <i class="fas fa-chevron-up fa-lg"></i>
+            </a>
+        </div>
+<!-- humberger-menu  -->
+        <div class="menu__btn">
+            <span class="inner_line" id="line1"></span>
+            <span class="inner_line" id="line2"></span>
+            <span class="inner_line" id="line3"></span>
+        </div>
+
+        <div class="menu">
+            <a href="#profile"><div class="menu__item">PROFILE</div></a>
+            <a href="#about"><div class="menu__item">ABOUT</div></a>
+            <a href="#service"><div class="menu__item">SERVICE</div></a>
+            <a href="#contact"><div class="menu__item">CONTACT</div></a>
+        </div>
+
+</body>
+
+</html>
